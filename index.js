@@ -77,6 +77,7 @@ function starMenu() {
             const manager = new Manager(answers.managerName, answers.managerID, answers.managerEmail, answers.managerOfficeNumber);
             teamMembers.push(manager);
             idNumbers.push(answers.managerID);
+            generateTeam();
         });
     };
 
@@ -172,6 +173,7 @@ function starMenu() {
             const engineer = new Engineer(answers.engineerName, answers.engineerID, answers.engineerEmail, answers.engineerGithub);
             teamMembers.push(engineer);
             idNumbers.push(answers.engineerID);
+            generateTeam();
         });
     };
 
@@ -236,15 +238,16 @@ function starMenu() {
                  return "Please enter a valid character";
                 }
             }
-        ]).then(answer => {
+        ]).then(answers => {
             const intern = new Intern(answers.internName, answers.internID, answers.internEmail, answers.internSchool);
             teamMembers.push(intern);
             idNumbers.push(answers.internID);
+            generateTeam();
         })
     };
 
     function buildTeam() {
-        // Create the output directory if the output path doesn't exist
+        console.log("Generating html page...")
         if (!fs.existsSync(OUTPUT_DIR)) {
           fs.mkdirSync(OUTPUT_DIR)
         };

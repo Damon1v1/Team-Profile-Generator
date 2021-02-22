@@ -1,0 +1,34 @@
+body {
+    background-image: url("websitebg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.team-heading {
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.team-heading h1 {
+    font-size: 350%;
+    color: whitesmoke
+}
+
+.employee-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.employee-card .card-header {
+    background-color: black;
+}
+.employee-card .card-title {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color: whitesmoke    
+}
+
+footer .navbar-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+  }

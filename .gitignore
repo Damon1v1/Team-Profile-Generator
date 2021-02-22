@@ -1,3 +1,4 @@
 package-lock.json
-page-template.js 
 node_modules
+.vscode
+.gitignore
